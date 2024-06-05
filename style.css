@@ -1,0 +1,230 @@
+:root {
+  --cor-dark: #040224;
+  --cor-clara: #E4DEF8;
+  --cor-destaque: #FA5E6E;
+  --cor-destaque2: #FABD41;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--cor-dark);
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-clara);
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  min-width: 320px;
+  height: auto;
+}
+
+.menuExercicio {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo {
+  font-size: 32px;
+  text-align: center;
+}
+
+.linkVer {
+  width: 300px;
+  text-decoration: none;
+  margin: 16px 0;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: var(--cor-dark);
+  color: var(--cor-clara);
+  border-radius: 50px;
+  box-shadow: -5px 5px 0 0 var(--cor-destaque);
+  text-align: center;
+}
+
+.linkVer:hover {
+  scale: 0.9;
+  box-shadow: none;
+  transition: all 300ms ease-in-out;
+}
+
+.exercicio {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.tituloExercicio {
+  margin: 8px 0;
+  width: 80%;
+  min-width: 300px;
+}
+
+.descricaoExercicio {
+  font-weight: 500;
+  line-height: 1.5;
+  width: 80%;
+  min-width: 280px;
+}
+
+.corpoExercicio {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.labelExercicio {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inputExercicio {
+  width: 280px;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: solid 5px var(--cor-destaque);
+  outline: none;
+  color: var(--cor-dark);
+  margin: 16px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-destaque);
+}
+
+.inputExercicio:focus {
+  border: solid 3px var(--cor-destaque2);
+  box-shadow: -3px 3px 0 0 var(--cor-destaque2);
+}
+
+.btnExercicio {
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: var(--cor-dark);
+  border: none;
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  color: var(--cor-clara);
+  display: none;
+}
+
+.btnExercicio:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: -2px 2px 0 0 var(--cor-destaque2);
+}
+
+.resultadoExercicio {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Exercicio 01 */
+
+.selectExercicio1 {
+  width: 280px;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 50px;
+  border: solid 5px var(--cor-destaque);
+  outline: none;
+  color: var(--cor-dark);
+  margin: 16px 0;
+  box-shadow: -5px 5px 0 0 var(--cor-destaque);
+}
+
+.selectExercicio1:focus {
+  border: solid 3px var(--cor-destaque2);
+  box-shadow: -3px 3px 0 0 var(--cor-destaque2);
+}
+
+.inputsFormaExercicio1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.corpoExercicio1Container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.exercicio1FormaEscolhida {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+
+.desenho {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  left: 30px;
+}
+
+.inputs {
+  display: none;
+}
+
+.inputs-forma {
+  display: none;
+}
+
+#forma-escolhida {
+  display: flex;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+}
+
+.forma-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.desenho {
+  display: none;
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: none;
+}
+
+.inputs-forma {
+  display: none;
+}
