@@ -110,34 +110,75 @@
 
     <section class="exercicio exercicio2" id="exercicio2">
       <h2 class="tituloExercicio">Jogo da Velha:</h2>
-      <p class="descricaoExercicio">  - Crie uma classe `JogoDaVelha` que represente o tabuleiro e as regras do jogo.<br/>
+      <p class="descricaoExercicio"> - Crie uma classe `JogoDaVelha` que represente o tabuleiro e as regras do
+        jogo.<br />
         - Implemente métodos para marcar uma posição no tabuleiro, verificar se há um vencedor e reiniciar o jogo.</p>
 
-        <div class="corpoExercicio corpoExercicio2">
+      <div class="corpoExercicio corpoExercicio2">
 
-          <div id="menuExercicio2" class="menuExercicio2">
-            <button id="umJogador" class="btnExercicio2">1 Jogador</button>
-            <button id="doisJogadores" class="btnExercicio2">2 Jogadores</button>
-          </div>
-          <div id="jogoDaVelha" class="jogoDaVelha">
-            <div class="tabuleiro" id="tabuleiro">
-              <div class="celula" data-index="0"></div>
-              <div class="celula" data-index="1"></div>
-              <div class="celula" data-index="2"></div>
-              <div class="celula" data-index="3"></div>
-              <div class="celula" data-index="4"></div>
-              <div class="celula" data-index="5"></div>
-              <div class="celula" data-index="6"></div>
-              <div class="celula" data-index="7"></div>
-              <div class="celula" data-index="8"></div>
-            </div>
-            <div id="jogadorAtual" class="labelExercicio">Jogador X</div>
-            <button id="reiniciarJogo" class="btnExercicio2">Reiniciar Jogo</button>
-            <div id="resultadoExercicio2"></div>
+        <div id="menuExercicio2" class="menuExercicio2">
+          <button id="umJogador" class="btnExercicio2">1 Jogador</button>
+          <button id="doisJogadores" class="btnExercicio2">2 Jogadores</button>
         </div>
-      <a href="#menuExercicio" class="linkVoltar">⬆️</a>
+        <div id="jogoDaVelha" class="jogoDaVelha">
+          <div class="tabuleiro" id="tabuleiro">
+            <div class="celula" data-index="0"></div>
+            <div class="celula" data-index="1"></div>
+            <div class="celula" data-index="2"></div>
+            <div class="celula" data-index="3"></div>
+            <div class="celula" data-index="4"></div>
+            <div class="celula" data-index="5"></div>
+            <div class="celula" data-index="6"></div>
+            <div class="celula" data-index="7"></div>
+            <div class="celula" data-index="8"></div>
+          </div>
+          <div id="jogadorAtual" class="labelExercicio">Jogador X</div>
+          <button id="reiniciarJogo" class="btnExercicio2">Reiniciar Jogo</button>
+          <div id="resultadoExercicio2"></div>
+        </div>
+        <a href="#menuExercicio" class="linkVoltar">⬆️</a>
     </section>
 
+    <section class="exercicio exercicio2" id="exercicio3">
+      <h2 class="tituloExercicio">Gestão de Contatos:</h2>
+      <p class="descricaoExercicio"> - Crie uma classe `Contato` com propriedades como nome, telefone e email.<br />
+        - Crie uma classe `Agenda` que possa adicionar, remover e pesquisar contatos.</p>
+
+      <div class="corpoExercicio corpoExercicio3">
+        <div class="adicionar-contato">
+          <h3>Adicionar Contato</h3>
+          <input type="text" id="nomeContato" placeholder="Nome" class="inputExercicio">
+          <input type="text" id="telefoneContato" placeholder="Telefone" class="inputExercicio">
+          <input type="email" id="emailContato" placeholder="Email" class="inputExercicio">
+          <input type="url" id="imagemContato" placeholder="url da Imagem (.png ou . jpg)" class="inputExercicio">
+          <button id="adicionarBtn" class="btnExercicio3">Adicionar</button>
+        </div>
+        <div class="pesquisar-contato">
+          <h3>Pesquisar Contato</h3>
+          <input type="text" id="nomePesquisar" placeholder="Nome do contato" class="inputExercicio">
+          <div id="resultadoPesquisa" class="resultadoExercicio"></div>
+        </div>
+        <div class="lista-contatos">
+          <h3>Lista de Contatos:</h3>
+          <ul id="listaContatos"></ul>
+        </div>
+      </div>
+      <a href="#menuExercicio" class="linkVoltar">⬆️</a>
+
+      <div id="modal-editar-contato" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">×</span>
+          <h2>Editar Contato</h2>
+          <input type="hidden" id="modal-indice">
+          <input type="text" id="modal-nome" placeholder="Nome" class="inputExercicio">
+          <input type="text" id="modal-telefone" placeholder="Telefone" class="inputExercicio">
+          <input type="email" id="modal-email" placeholder="Email" class="inputExercicio">
+          <input type="url" id="modal-imagem" placeholder="URL da imagem" class="inputExercicio">
+          <button id="modal-salvar-btn" class="btnExercicio3">Salvar</button>
+        </div>
+      </div>
+
+    </section>
 
 
 
@@ -146,6 +187,7 @@
 
   <script src="scripts/exercicio1.js"></script>
   <script src="scripts/exercicio2.js"></script>
+  <script src="scripts/exercicio3.js"></script>
 </body>
 
 </html>
