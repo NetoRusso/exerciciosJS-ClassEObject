@@ -12,7 +12,7 @@
 <body>
   <main>
     <h1 class="titulo">Atividade - JS - Classes e Objetos</h1>
-    <section class="menuExercicio">
+    <section class="menuExercicio" id="menuExercicio">
       <a class="linkVer" href="#exercicio1">
         <h2 class="nomeExercicio">Calculadora de Geometria</h2>
       </a>
@@ -102,10 +102,40 @@
         </div>
         <div class="botoesExercicio">
           <button type="button" class="btnExercicio btnExercicio1" id="btnExercicio1">Calcular</button>
-        <div class="resultadoExercicio resultadoExercicio1" id="resultadoExercicio1"></div>
+          <div class="resultadoExercicio resultadoExercicio1" id="resultadoExercicio1"></div>
         </div>
-
+        <a href="#menuExercicio" class="linkVoltar">⬆️</a>
       </div>
+    </section>
+
+    <section class="exercicio exercicio2" id="exercicio2">
+      <h2 class="tituloExercicio">Jogo da Velha:</h2>
+      <p class="descricaoExercicio">  - Crie uma classe `JogoDaVelha` que represente o tabuleiro e as regras do jogo.<br/>
+        - Implemente métodos para marcar uma posição no tabuleiro, verificar se há um vencedor e reiniciar o jogo.</p>
+
+        <div class="corpoExercicio corpoExercicio2">
+
+          <div id="menuExercicio2" class="menuExercicio2">
+            <button id="umJogador" class="btnExercicio2">1 Jogador</button>
+            <button id="doisJogadores" class="btnExercicio2">2 Jogadores</button>
+          </div>
+          <div id="jogoDaVelha" class="jogoDaVelha">
+            <div class="tabuleiro" id="tabuleiro">
+              <div class="celula" data-index="0"></div>
+              <div class="celula" data-index="1"></div>
+              <div class="celula" data-index="2"></div>
+              <div class="celula" data-index="3"></div>
+              <div class="celula" data-index="4"></div>
+              <div class="celula" data-index="5"></div>
+              <div class="celula" data-index="6"></div>
+              <div class="celula" data-index="7"></div>
+              <div class="celula" data-index="8"></div>
+            </div>
+            <div id="jogadorAtual" class="labelExercicio">Jogador X</div>
+            <button id="reiniciarJogo" class="btnExercicio2">Reiniciar Jogo</button>
+            <div id="resultadoExercicio2"></div>
+        </div>
+      <a href="#menuExercicio" class="linkVoltar">⬆️</a>
     </section>
 
 
@@ -115,6 +145,7 @@
   </main>
 
   <script src="scripts/exercicio1.js"></script>
+  <script src="scripts/exercicio2.js"></script>
 </body>
 
 </html>
