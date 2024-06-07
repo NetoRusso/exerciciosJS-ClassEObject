@@ -139,7 +139,7 @@
         <a href="#menuExercicio" class="linkVoltar">⬆️</a>
     </section>
 
-    <section class="exercicio exercicio2" id="exercicio3">
+    <section class="exercicio exercicio3" id="exercicio3">
       <h2 class="tituloExercicio">Gestão de Contatos:</h2>
       <p class="descricaoExercicio"> - Crie uma classe `Contato` com propriedades como nome, telefone e email.<br />
         - Crie uma classe `Agenda` que possa adicionar, remover e pesquisar contatos.</p>
@@ -180,14 +180,55 @@
 
     </section>
 
+    <section class="exercicio exercicio4" id="exercicio4">
+      <h2 class="tituloExercicio">Sistema Bancário:</h2>
+      <p class="descricaoExercicio">
+        - Crie uma classe `ContaBancaria` com propriedades como saldo e número da conta.
+        <br />
+        - Implemente métodos para depositar, sacar e verificar o saldo da conta.
+      </p>
+      <div class="corpoExercicio corpoExercicio4">
+        <div class="nova-conta">
+          <h3>Nova Conta</h3>
+          <input type="text" id="numeroConta" placeholder="Número da Conta (0000 0000 0000-00)" class="inputExercicio"
+            minlength="14" maxlength="15" required>
+          <input type="text" id="nomeCompleto" placeholder="Nome Completo" class="inputExercicio" required>
+          <input type="number" id="capitalInicial" placeholder="Capital Inicial" class="inputExercicio" required>
+          <button id="criarContaBtn" class="btnExercicio3">Criar Conta</button>
+        </div>
 
+        <div class="conta-info" style="display: none;">
+          <div class="operacoes">
+            <h3>Operações</h3>
+            <h3 id="operacaoAtual" style="display: none;"></h3>
+            <div class="opercoesBtns">
+              <button id="depositarBtn" class="btnExercicio4">Depositar</button>
+              <button id="sacarBtn" class="btnExercicio4">Sacar</button>
+            </div>
+            <input type="number" id="valorOperacao" placeholder="Valor" class="inputExercicio" style="display: none;">
+            <button id="confirmarOperacaoBtn" class="btnExercicio4" style="display: none;">Confirmar </button>
+          </div>
 
+          <div class="dados-conta">
+            <h3>Dados da Conta:</h3>
+            <p id="nomeConta"></p>
+            <p id="numeroContaExibido"></p>
+            <p id="saldoConta"></p>
+            <button id="desconectarBtn" class="btnExercicio3">Desconectar</button>
+          </div>
+        </div>
+
+        <p id="info-conta" style="display: none;"></p>
+      </div>
+      <a href="#menuExercicio" class="linkVoltar">⬆️</a>
+    </section>
 
   </main>
 
   <script src="scripts/exercicio1.js"></script>
   <script src="scripts/exercicio2.js"></script>
   <script src="scripts/exercicio3.js"></script>
+  <script src="scripts/exercicio4.js"></script>
 </body>
 
 </html>
