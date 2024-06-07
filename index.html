@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Neto Russo">
   <title>Exercícios Classes e Objetos</title>
 
   <link rel="stylesheet" href="style.css">
@@ -223,12 +224,44 @@
       <a href="#menuExercicio" class="linkVoltar">⬆️</a>
     </section>
 
+    <section class="exercicio exercicio5" id="exercicio5">
+      <h2 class="tituloExercicio">Loja Online:</h2>
+      <p class="descricaoExercicio">
+        - Crie uma classe `Produto` com propriedades como nome, preço e quantidade em estoque.
+        <br />
+        - Crie uma classe `CarrinhoDeCompras` que possa adicionar produtos, calcular o total da compra e finalizar a
+        compra.
+      </p>
+      <div class="corpoExercicio corpoExercicio5">
+        <h3 class="subTituloLoja">Escolha os seus produtos!</h3>
+        <div class="produtos" id="produtos">
+
+        </div>
+        <div class="carrinho" id="carrinho">
+          <h2>Carrinho de Compras</h2>
+          <ul id="itensCarrinho">
+
+          </ul>
+          <p id="totalCarrinho">Total: R$ 0,00</p>
+          <button id="finalizarCompra" class="btnExercicio5">Finalizar Compra</button>
+          <p id="mensagemCompra" style="display: none;"></p> 
+        </div>
+      </div>
+
+      <a href="#menuExercicio" class="linkVoltar">⬆️</a>
+    </section>
+
   </main>
+
+  <footer class="rodaPe">
+    <p class="textoRodaPe"><a href="https://www.linkedin.com/in/neto-russo/" target="_blank" title="Linkedin || Neto Russo">Neto Russo</a> &copy; 2024</p>
+  </footer>
 
   <script src="scripts/exercicio1.js"></script>
   <script src="scripts/exercicio2.js"></script>
   <script src="scripts/exercicio3.js"></script>
   <script src="scripts/exercicio4.js"></script>
+  <script src="scripts/exercicio5.js"></script>
 </body>
 
 </html>
