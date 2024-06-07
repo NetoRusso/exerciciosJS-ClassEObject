@@ -73,6 +73,7 @@ main {
 .exercicio {
   width: 100%;
   min-height: 80vh;
+  margin: 100px 0;
 }
 
 .tituloExercicio {
@@ -416,4 +417,87 @@ box-shadow: -2px 2px 0 0 var(--cor-destaque2);
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* Exercício 4 */
+
+.corpoExercicio4 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nova-conta {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.conta-info {
+  width: 80%;
+  min-width: 320px;
+  display: none;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.operacoes,
+.dados-conta {
+  width: 320px; 
+}
+.opercoesBtns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnExercicio4 {
+  width: 120px;
+  height: auto;
+  margin: 16px 0;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  background-color: var(--cor-dark);
+  border: none;
+  box-shadow: -3px 3px 0 0 var(--cor-destaque);
+  color: var(--cor-clara);
+}
+
+.btnExercicio4:hover {
+  scale: 1.2;
+  cursor: pointer;
+  box-shadow: -2px 2px 0 0 var(--cor-destaque2);
+}
+
+#valorOperacao {
+  margin-top: 16px; 
+}
+
+.dados-conta p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#operacaoAtual {
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+#confirmarOperacaoBtn {
+  margin-top: 16px;
+}
+
+#info-conta {
+  margin-top: 16px;
+  color: var(--cor-destaque);
+  font-weight: 600;
 }
